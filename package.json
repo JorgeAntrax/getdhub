@@ -1,0 +1,25 @@
+{
+  "name": "getdhub",
+  "version": "1.0.0",
+  "description": "Landing pase design getdhub.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeAntrax/getdhub.git"
+  },
+  "keywords": [
+    "getdhub",
+    "landingpage",
+    "digital",
+    "booting"
+  ],
+  "author": "Digital Booting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JorgeAntrax/getdhub/issues"
+  },
+  "homepage": "https://github.com/JorgeAntrax/getdhub#readme"
+}
