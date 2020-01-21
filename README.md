@@ -1,1 +1,1 @@
-(href="https://devs.digitalbooting.com/getdhub") Proyect getdhub.com
+https://devs.digitalbooting.com/getdhub Proyect getdhub.com
