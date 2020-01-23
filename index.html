@@ -12,15 +12,22 @@
 
 <body>
     <nav>
-        <a href="/" class="active">
-            <img src="logo.png" alt="getdhub logo" id="logo">
-        </a>
+        <div class="container_menu">
+            <div class="headNav">
+                <a href="/" class="active">
+                    <img src="logo.png" alt="getdhub logo" id="logo">
+                </a>
+                <span class="closeMenu">
+                <span></span><span></span><span></span>
+            </span>
+            </div>
 
-        <div>
-            <a href="">Home</a>
-            <a href="">Platform</a>
-            <a href="">FAQ</a>
-            <a href="#contact" class="btn active">Talk with sales</a>
+            <div class="_menu_">
+                <a href="">Home</a>
+                <a href="">Platform</a>
+                <a href="">FAQ</a>
+                <a href="#contact" class="btn active">Talk with sales</a>
+            </div>
         </div>
     </nav>
     <div class="header">
@@ -101,7 +108,7 @@
             </div>
         </section>
         
-        <section class="section flex-column center">
+        <section class="section flex-column center mision">
             <h1 class="flex center text-center active">Our Mission</h1>
             <p class="text-center" style="max-width: 650px;">Our Mission is to provide top notch AI wms solutions for our clients across industries, ensuring a streamlined, yet efficient AI wms solution regardless of application.</p>
             <div>
@@ -129,7 +136,7 @@
             <div class="wrapper section flex-column center">
                 <h1 class="flex center text-center subtitle">What Are The Advantages Of Using dHUB?</h1>
                 <p class="text-center" style="max-width: 650px;">Our Mission is to provide top notch AI wms solutions for our clients across industries, ensuring a streamlined, yet efficient AI wms solution regardless of application.</p>
-                <div>
+                <div class="mobilewhats">
                     <a href="/" class="btn secondary" style="display:inline-flex; margin-top:1rem;">Schedule an intro</a>
                 </div>
                 <img src="https://getdhub.com/wp-content/uploads/2020/01/image-13.png" alt="Our Mission">
@@ -150,16 +157,16 @@
                     <p style="margin-top: 1rem;">Distribution done right. From route planning to inventory control. Use our intuitive distribution hub & mobile application for scanning and auto-routing of inventory to customer stops.</p>
                 </section>
                 <section class="flex-column">
-                    <p class="flex nowrap">
+                    <p class="flex nowrap nocolumn">
                         <ion-icon name="navigate"></ion-icon>
                         <span>Office 1235 Divi St. #1000 San Francisco, CA 94143</span>
                     </p>
 
-                    <p class="flex nowrap">
+                    <p class="flex nowrap nocolumn">
                         <ion-icon name="time"></ion-icon>
                         <span>Hours M-F: 8am – 10pm S-S: Closed</span>
                     </p>
-                    <p class="flex nowrap">
+                    <p class="flex nowrap nocolumn">
                         <ion-icon name="call"></ion-icon>
                         <span>Call Us: (235) 396-0987</span>
                     </p>
@@ -169,12 +176,12 @@
                 <section class="flex-column">
                     <h4>Need More Information?</h4>
                     <p style="margin:1rem 0;">Get in touch with us about your business needs, or a specific question regarding the dHub platform.</p>
-                    <form class="flex nowrap" id="suscribe">
+                    <form class="flex suscriber nowrap" id="suscribe">
                         <input class="input" type="email" placeholder="your email...">
                         <button class="btn secondary active" style="flex-shrink: 0;">Go ahead!</button>
                     </form>
 
-                    <div class="flex" style="margin-top: 1rem;">
+                    <div class="flex nocolumn" style="margin-top: 1rem;">
                         <a href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fgetdhub.com%2F&linkname=End-to-end%20Mobile%20Wholesale%20Distribution%20Software%20%7C%20Distribution%20Hub&linknote=Get%20in%20touch%20with%20us%20about%20your%20business%20needs%2C%20or%20a%20specific%20question%20regarding%20the%20dHub%20platform." style="margin-right: 1rem; font-size: 1.5rem;">
                             <ion-icon name="logo-facebook"></ion-icon>
                         </a>
@@ -190,11 +197,20 @@
         </div>
         <small style="padding:1rem;" class="text-center">© Copyright Distribution Hub. All Rights Reserved | <a href="https://getdhub.com/privacy-policy/">Privacy Policy</a> | <a
                 href="https://getdhub.com/terms-conditions/">Terms & Conditions</a></small>
-        <div class="flex nowrap center designed">
+        <div class="flex nowrap nocolumn center designed">
             <img width="30" height="30" style="margin-right: 0.5rem" src="https://digitalbooting.com/images/logo.png" alt="Digital Booting Agency">
             <small>Designed by <a href="https://digitalbooting.com">Digital <strong style="color:limegreen">Booting</strong></a></small>
         </div>
     </footer>
+    <script src="app.js"></script>
+    <script>
+        'use strict';
+        window.onload = () => {
+            $select('.closeMenu').watch('click', function(){
+                $select('._menu_').classList.toggle('show');
+            },false);
+        };
+    </script>
 </body>
 
 </html>

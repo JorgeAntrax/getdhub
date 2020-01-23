@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f3e2b06f-7617-4978-9274-ae7eae1c8400" name="getdhub" url="https://devs.digitalbooting.com">
+        <fileTransfer host="digitalbooting.com" port="21" rootFolder="/devs.digitalbooting.com/getdhub">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="59004fc6-018b-45f4-9a5e-ffeac68a2e35" name="novovission" url="https://novovission.com">
+        <fileTransfer host="novovission.com" port="21" rootFolder="/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
